@@ -1,0 +1,889 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Feb 20 23:29:42 2024
+# Process ID: 16064
+# Current directory: D:/FPGA/snake_basys3/snake_basys3.runs/synth_1
+# Command line: vivado.exe -log top_greedy_snake.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_greedy_snake.tcl
+# Log file: D:/FPGA/snake_basys3/snake_basys3.runs/synth_1/top_greedy_snake.vds
+# Journal file: D:/FPGA/snake_basys3/snake_basys3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_greedy_snake.tcl -notrace
+Command: synth_design -top top_greedy_snake -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11688 
+WARNING: [Synth 8-2611] redeclaration of ansi port clk_n is not allowed [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/clk_unit.v:13]
+WARNING: [Synth 8-976] clk_n has already been declared [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/clk_unit.v:13]
+WARNING: [Synth 8-2654] second declaration of clk_n ignored [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/clk_unit.v:13]
+INFO: [Synth 8-994] clk_n is declared here [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/clk_unit.v:10]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 475.340 ; gain = 112.020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_greedy_snake' [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/top_greedy_snake.v:9]
+INFO: [Synth 8-6157] synthesizing module 'clock' [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/clock.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'clock' (1#1) [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/clock.v:8]
+INFO: [Synth 8-6157] synthesizing module 'game_status_control' [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/game_status_control.v:8]
+	Parameter RESTART bound to: 2'b00 
+	Parameter START bound to: 2'b01 
+	Parameter PLAY bound to: 2'b10 
+	Parameter DIE bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'game_status_control' (2#1) [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/game_status_control.v:8]
+INFO: [Synth 8-6157] synthesizing module 'apple_generator' [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/apple_generator.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'apple_generator' (3#1) [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/apple_generator.v:9]
+INFO: [Synth 8-6157] synthesizing module 'snake_moving' [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/snake_moving.v:8]
+	Parameter UP bound to: 2'b00 
+	Parameter DOWN bound to: 2'b01 
+	Parameter LEFT bound to: 2'b10 
+	Parameter RIGHT bound to: 2'b11 
+	Parameter NONE bound to: 2'b00 
+	Parameter HEAD bound to: 2'b01 
+	Parameter BODY bound to: 2'b10 
+	Parameter WALL bound to: 2'b11 
+	Parameter RESTART bound to: 2'b00 
+	Parameter START bound to: 2'b01 
+	Parameter PLAY bound to: 2'b10 
+WARNING: [Synth 8-567] referenced signal 'cube_x' should be on the sensitivity list [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/snake_moving.v:434]
+WARNING: [Synth 8-567] referenced signal 'cube_y' should be on the sensitivity list [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/snake_moving.v:434]
+WARNING: [Synth 8-567] referenced signal 'is_exist' should be on the sensitivity list [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/snake_moving.v:434]
+WARNING: [Synth 8-567] referenced signal 'die_flash' should be on the sensitivity list [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/snake_moving.v:434]
+WARNING: [Synth 8-6014] Unused sequential element tempSpeed_reg was removed.  [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/snake_moving.v:86]
+INFO: [Synth 8-6155] done synthesizing module 'snake_moving' (4#1) [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/snake_moving.v:8]
+INFO: [Synth 8-6157] synthesizing module 'vga_control' [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/VGA_Control.v:9]
+INFO: [Synth 8-6157] synthesizing module 'clk_unit' [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/clk_unit.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'clk_unit' (5#1) [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/clk_unit.v:7]
+INFO: [Synth 8-6157] synthesizing module 'vga_display' [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/vga_display.v:8]
+	Parameter NONE bound to: 2'b00 
+	Parameter HEAD bound to: 2'b01 
+	Parameter BODY bound to: 2'b10 
+	Parameter WALL bound to: 2'b11 
+	Parameter HEAD_COLOR bound to: 12'b000011110000 
+	Parameter BODY_COLOR bound to: 12'b000011111111 
+INFO: [Synth 8-6157] synthesizing module 'interface_display' [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/interface_display.v:7]
+	Parameter NONE bound to: 2'b00 
+	Parameter HEAD bound to: 2'b01 
+	Parameter BODY bound to: 2'b10 
+	Parameter WALL bound to: 2'b11 
+	Parameter HEAD_COLOR bound to: 12'b000011110000 
+	Parameter BODY_COLOR bound to: 12'b111111110000 
+	Parameter RESTART bound to: 2'b00 
+	Parameter START bound to: 2'b01 
+	Parameter PLAY bound to: 2'b10 
+	Parameter DIE bound to: 2'b11 
+	Parameter h_a bound to: 11'b00001100000 
+	Parameter h_b bound to: 11'b00000110000 
+	Parameter h_c bound to: 11'b01010000000 
+	Parameter h_d bound to: 11'b00000010000 
+	Parameter h_all bound to: 11'b01100100000 
+	Parameter v_a bound to: 11'b00000000010 
+	Parameter v_b bound to: 11'b00000100001 
+	Parameter v_c bound to: 11'b00111100000 
+	Parameter v_d bound to: 11'b00000001010 
+	Parameter v_all bound to: 11'b01000001101 
+	Parameter width bound to: 11'b00101000000 
+	Parameter height bound to: 11'b00011110000 
+WARNING: [Synth 8-6090] variable 'VGA_data_interface' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/interface_display.v:75]
+WARNING: [Synth 8-6090] variable 'VGA_data_interface' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/interface_display.v:79]
+INFO: [Synth 8-6157] synthesizing module 'pic_snake' [D:/FPGA/snake_basys3/snake_basys3.runs/synth_1/.Xil/Vivado-16064-LAPTOP-JUA6D9DK/realtime/pic_snake_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pic_snake' (6#1) [D:/FPGA/snake_basys3/snake_basys3.runs/synth_1/.Xil/Vivado-16064-LAPTOP-JUA6D9DK/realtime/pic_snake_stub.v:6]
+WARNING: [Synth 8-350] instance 'u_pic_snake' of module 'pic_snake' requires 6 connections, but only 4 given [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/interface_display.v:89]
+WARNING: [Synth 8-6014] Unused sequential element lox_reg was removed.  [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/interface_display.v:52]
+WARNING: [Synth 8-6014] Unused sequential element loy_reg was removed.  [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/interface_display.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'interface_display' (7#1) [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/interface_display.v:7]
+WARNING: [Synth 8-5788] Register x_pos_reg in module vga_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/vga_display.v:50]
+WARNING: [Synth 8-5788] Register y_pos_reg in module vga_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/vga_display.v:51]
+WARNING: [Synth 8-5788] Register color_out_reg in module vga_display is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/vga_display.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'vga_display' (8#1) [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/vga_display.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'vga_control' (9#1) [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/VGA_Control.v:9]
+INFO: [Synth 8-6157] synthesizing module 'buttons' [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/buttons.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'buttons' (10#1) [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/buttons.v:8]
+INFO: [Synth 8-6157] synthesizing module 'seg_display' [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/Seg_Display.v:8]
+	Parameter RESTART bound to: 2'b00 
+INFO: [Synth 8-6155] done synthesizing module 'seg_display' (11#1) [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/Seg_Display.v:8]
+INFO: [Synth 8-6157] synthesizing module 'reward_logic' [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/reward_logic.v:8]
+INFO: [Synth 8-6157] synthesizing module 'reward_random_generator' [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/reward_random_generator.v:7]
+WARNING: [Synth 8-3936] Found unconnected internal register 'seed_reg' and it is trimmed from '8' to '4' bits. [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/reward_random_generator.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'reward_random_generator' (12#1) [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/reward_random_generator.v:7]
+INFO: [Synth 8-6157] synthesizing module 'reward_display' [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/reward_display.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'reward_display' (13#1) [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/reward_display.v:11]
+INFO: [Synth 8-6157] synthesizing module 'reward_information' [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/reward_information.v:8]
+INFO: [Synth 8-6157] synthesizing module 'pic_protected' [D:/FPGA/snake_basys3/snake_basys3.runs/synth_1/.Xil/Vivado-16064-LAPTOP-JUA6D9DK/realtime/pic_protected_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pic_protected' (14#1) [D:/FPGA/snake_basys3/snake_basys3.runs/synth_1/.Xil/Vivado-16064-LAPTOP-JUA6D9DK/realtime/pic_protected_stub.v:6]
+WARNING: [Synth 8-350] instance 'info_pic_protected' of module 'pic_protected' requires 6 connections, but only 4 given [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/reward_information.v:80]
+INFO: [Synth 8-6157] synthesizing module 'pic_slowly' [D:/FPGA/snake_basys3/snake_basys3.runs/synth_1/.Xil/Vivado-16064-LAPTOP-JUA6D9DK/realtime/pic_slowly_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pic_slowly' (15#1) [D:/FPGA/snake_basys3/snake_basys3.runs/synth_1/.Xil/Vivado-16064-LAPTOP-JUA6D9DK/realtime/pic_slowly_stub.v:6]
+WARNING: [Synth 8-350] instance 'info_pic_slowly' of module 'pic_slowly' requires 6 connections, but only 4 given [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/reward_information.v:87]
+INFO: [Synth 8-6157] synthesizing module 'pic_grade' [D:/FPGA/snake_basys3/snake_basys3.runs/synth_1/.Xil/Vivado-16064-LAPTOP-JUA6D9DK/realtime/pic_grade_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pic_grade' (16#1) [D:/FPGA/snake_basys3/snake_basys3.runs/synth_1/.Xil/Vivado-16064-LAPTOP-JUA6D9DK/realtime/pic_grade_stub.v:6]
+WARNING: [Synth 8-350] instance 'info_pic_grade' of module 'pic_grade' requires 6 connections, but only 4 given [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/reward_information.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'reward_information' (17#1) [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/reward_information.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'reward_logic' (18#1) [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/reward_logic.v:8]
+WARNING: [Synth 8-3848] Net led in module/entity top_greedy_snake does not have driver. [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/top_greedy_snake.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'top_greedy_snake' (19#1) [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/top_greedy_snake.v:9]
+WARNING: [Synth 8-3331] design reward_display has unconnected port reward_type[1]
+WARNING: [Synth 8-3331] design reward_display has unconnected port reward_type[0]
+WARNING: [Synth 8-3331] design reward_display has unconnected port VGA_xpos[10]
+WARNING: [Synth 8-3331] design reward_display has unconnected port VGA_xpos[3]
+WARNING: [Synth 8-3331] design reward_display has unconnected port VGA_xpos[2]
+WARNING: [Synth 8-3331] design reward_display has unconnected port VGA_xpos[1]
+WARNING: [Synth 8-3331] design reward_display has unconnected port VGA_xpos[0]
+WARNING: [Synth 8-3331] design reward_display has unconnected port VGA_ypos[10]
+WARNING: [Synth 8-3331] design reward_display has unconnected port VGA_ypos[3]
+WARNING: [Synth 8-3331] design reward_display has unconnected port VGA_ypos[2]
+WARNING: [Synth 8-3331] design reward_display has unconnected port VGA_ypos[1]
+WARNING: [Synth 8-3331] design reward_display has unconnected port VGA_ypos[0]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[14]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[13]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[12]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[11]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[10]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[9]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[8]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[7]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[6]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[5]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[4]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[3]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[15]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[14]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[13]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[12]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[11]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[10]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[9]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[8]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[7]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[6]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[5]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[4]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[3]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[2]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[1]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 524.543 ; gain = 161.223
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 524.543 ; gain = 161.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 524.543 ; gain = 161.223
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/ip/pic_protected/pic_protected/pic_protected_in_context.xdc] for cell 'u_reward_logic/u_reward_information/info_pic_protected'
+Finished Parsing XDC File [d:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/ip/pic_protected/pic_protected/pic_protected_in_context.xdc] for cell 'u_reward_logic/u_reward_information/info_pic_protected'
+Parsing XDC File [d:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/ip/pic_slowly/pic_slowly/pic_slowly_in_context.xdc] for cell 'u_reward_logic/u_reward_information/info_pic_slowly'
+Finished Parsing XDC File [d:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/ip/pic_slowly/pic_slowly/pic_slowly_in_context.xdc] for cell 'u_reward_logic/u_reward_information/info_pic_slowly'
+Parsing XDC File [d:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/ip/pic_grade/pic_grade/pic_grade_in_context.xdc] for cell 'u_reward_logic/u_reward_information/info_pic_grade'
+Finished Parsing XDC File [d:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/ip/pic_grade/pic_grade/pic_grade_in_context.xdc] for cell 'u_reward_logic/u_reward_information/info_pic_grade'
+Parsing XDC File [d:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/ip/pic_snake/pic_snake/pic_snake_in_context.xdc] for cell 'u_vga_control/VGA/u_interface_display/u_pic_snake'
+Finished Parsing XDC File [d:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/ip/pic_snake/pic_snake/pic_snake_in_context.xdc] for cell 'u_vga_control/VGA/u_interface_display/u_pic_snake'
+Parsing XDC File [D:/FPGA/snake_basys3/snake_basys3.srcs/constrs_1/imports/xdc/snake_basys3_xc.xdc]
+Finished Parsing XDC File [D:/FPGA/snake_basys3/snake_basys3.srcs/constrs_1/imports/xdc/snake_basys3_xc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/FPGA/snake_basys3/snake_basys3.srcs/constrs_1/imports/xdc/snake_basys3_xc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_greedy_snake_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_greedy_snake_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 865.234 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_reward_logic/u_reward_information/info_pic_grade' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_reward_logic/u_reward_information/info_pic_protected' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_reward_logic/u_reward_information/info_pic_slowly' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:25 . Memory (MB): peak = 866.695 ; gain = 503.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:25 . Memory (MB): peak = 866.695 ; gain = 503.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for u_reward_logic/u_reward_information/info_pic_protected. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_reward_logic/u_reward_information/info_pic_slowly. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_reward_logic/u_reward_information/info_pic_grade. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_vga_control/VGA/u_interface_display/u_pic_snake. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:26 . Memory (MB): peak = 866.695 ; gain = 503.375
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'game_status_reg' in module 'game_status_control'
+INFO: [Synth 8-5544] ROM "restart" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_status" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_status" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clk_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "add_cube" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/snake_moving.v:309]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/snake_moving.v:309]
+INFO: [Synth 8-802] inferred FSM for state register 'direct_r_reg' in module 'snake_moving'
+INFO: [Synth 8-5544] ROM "is_exist" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "direct_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "direct_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "direct_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "VGA_data_interface" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "VGA_data_interface0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "hsync" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "clk_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "left_key_last" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "seg_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'set_require_reg' into 'dout_reg' [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/reward_random_generator.v:98]
+WARNING: [Synth 8-6014] Unused sequential element set_require_reg was removed.  [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/reward_random_generator.v:98]
+INFO: [Synth 8-4471] merging register 'addr_grade_reg[9:0]' into 'addr_protected_reg[9:0]' [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/reward_information.v:61]
+INFO: [Synth 8-4471] merging register 'addr_slowly_reg[9:0]' into 'addr_protected_reg[9:0]' [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/reward_information.v:62]
+WARNING: [Synth 8-6014] Unused sequential element addr_grade_reg was removed.  [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/reward_information.v:61]
+WARNING: [Synth 8-6014] Unused sequential element addr_slowly_reg was removed.  [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/reward_information.v:62]
+INFO: [Synth 8-5544] ROM "VGA_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enable_reward" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reward_protected" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reward_slowly" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reward_grade" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   START |                               00 |                               01
+                    PLAY |                               01 |                               10
+                     DIE |                               10 |                               11
+                 RESTART |                               11 |                               00
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'game_status_reg' using encoding 'sequential' in module 'game_status_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               11
+                 iSTATE2 |                               01 |                               01
+                  iSTATE |                               10 |                               10
+                 iSTATE0 |                               11 |                               00
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'direct_r_reg' using encoding 'sequential' in module 'snake_moving'
+WARNING: [Synth 8-327] inferring latch for variable 'snake_reg' [D:/FPGA/snake_basys3/snake_basys3.srcs/sources_1/imports/src/snake_moving.v:437]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:29 . Memory (MB): peak = 866.695 ; gain = 503.375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 5     
++---XORs : 
+	   2 Input      1 Bit         XORs := 6     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 3     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 35    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 37    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 19    
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 4     
+	   6 Input     12 Bit        Muxes := 1     
+	   5 Input     12 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 32    
+	   3 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 10    
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 9     
+	   7 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 86    
+	   3 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clock 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module game_status_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 1     
+Module apple_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module snake_moving 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 32    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 32    
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   6 Input      2 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 29    
+	   4 Input      1 Bit        Muxes := 3     
+Module clk_unit 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module interface_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   6 Input     12 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module vga_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 2     
+Module buttons 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module seg_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 15    
+	   6 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	  11 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 2     
+Module reward_random_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 6     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module reward_display 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module reward_information 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   5 Input     12 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module reward_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   8 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 33    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "clk_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "add_cube" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "is_exist" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "VGA/u_interface_display/VGA_data_interface" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "VGA/hsync" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP VGA/u_interface_display/addr_pic1, operation Mode is: A*(B:0x140).
+DSP Report: operator VGA/u_interface_display/addr_pic1 is absorbed into DSP VGA/u_interface_display/addr_pic1.
+DSP Report: Generating DSP VGA/u_interface_display/addr_pic_reg, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffff60).
+DSP Report: register VGA/u_interface_display/addr_pic_reg is absorbed into DSP VGA/u_interface_display/addr_pic_reg.
+DSP Report: operator VGA/u_interface_display/addr_pic0 is absorbed into DSP VGA/u_interface_display/addr_pic_reg.
+INFO: [Synth 8-5545] ROM "clk_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "left_key_last" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP u_reward_information/addr_protected1, operation Mode is: A*(B:0x18).
+DSP Report: operator u_reward_information/addr_protected1 is absorbed into DSP u_reward_information/addr_protected1.
+DSP Report: Generating DSP u_reward_information/addr_protected_reg, operation Mode is: PCIN+(A:0x0):B+(C:0xfffffffffe16).
+DSP Report: register u_reward_information/addr_protected_reg is absorbed into DSP u_reward_information/addr_protected_reg.
+DSP Report: operator u_reward_information/addr_protected0 is absorbed into DSP u_reward_information/addr_protected_reg.
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[14]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[13]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[12]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[11]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[10]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[9]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[8]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[7]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[6]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[5]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[4]
+WARNING: [Synth 8-3331] design reward_logic has unconnected port sw[3]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[15]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[14]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[13]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[12]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[11]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[10]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[9]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[8]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[7]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[6]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[5]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[4]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[3]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[2]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[1]
+WARNING: [Synth 8-3331] design top_greedy_snake has unconnected port led[0]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_snake_moving/\is_exist_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_snake_moving/\is_exist_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_snake_moving/\is_exist_reg[2] )
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_display/FLASH_COLOR_reg[0]' (FD) to 'u_reward_logic/u_reward_display/FLASH_COLOR_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_display/FLASH_COLOR_reg[1]' (FD) to 'u_reward_logic/u_reward_display/FLASH_COLOR_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_display/FLASH_COLOR_reg[2]' (FD) to 'u_reward_logic/u_reward_display/FLASH_COLOR_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_display/FLASH_COLOR_reg[3]' (FD) to 'u_reward_logic/u_reward_display/FLASH_COLOR_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_display/FLASH_COLOR_reg[4]' (FD) to 'u_reward_logic/u_reward_display/FLASH_COLOR_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_display/FLASH_COLOR_reg[5]' (FD) to 'u_reward_logic/u_reward_display/FLASH_COLOR_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_display/FLASH_COLOR_reg[6]' (FD) to 'u_reward_logic/u_reward_display/FLASH_COLOR_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_reward_logic/\u_reward_random_generator/random_xpos_reg[5] )
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_random_generator/random_ypos_reg[4]' (FDRE) to 'u_reward_logic/u_reward_random_generator/random_ypos_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_reward_logic/\u_reward_random_generator/random_ypos_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_apple_generator/\apple_x_reg[5] )
+INFO: [Synth 8-3886] merging instance 'u_seg_display/clk_cnt_reg[31]' (FDC) to 'u_seg_display/clk_cnt_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_seg_display/clk_cnt_reg[30]' (FDC) to 'u_seg_display/clk_cnt_reg[29]'
+INFO: [Synth 8-3886] merging instance 'u_seg_display/clk_cnt_reg[29]' (FDC) to 'u_seg_display/clk_cnt_reg[28]'
+INFO: [Synth 8-3886] merging instance 'u_seg_display/clk_cnt_reg[28]' (FDC) to 'u_seg_display/clk_cnt_reg[27]'
+INFO: [Synth 8-3886] merging instance 'u_seg_display/clk_cnt_reg[27]' (FDC) to 'u_seg_display/clk_cnt_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_seg_display/clk_cnt_reg[26]' (FDC) to 'u_seg_display/clk_cnt_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_seg_display/clk_cnt_reg[25]' (FDC) to 'u_seg_display/clk_cnt_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_seg_display/clk_cnt_reg[24]' (FDC) to 'u_seg_display/clk_cnt_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_seg_display/clk_cnt_reg[23]' (FDC) to 'u_seg_display/clk_cnt_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_seg_display/clk_cnt_reg[22]' (FDC) to 'u_seg_display/clk_cnt_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_seg_display/clk_cnt_reg[21]' (FDC) to 'u_seg_display/clk_cnt_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_seg_display/clk_cnt_reg[20]' (FDC) to 'u_seg_display/clk_cnt_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_seg_display/clk_cnt_reg[19]' (FDC) to 'u_seg_display/clk_cnt_reg[18]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_seg_display/\clk_cnt_reg[18] )
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_display/VGA_data_reg[0]' (FDR) to 'u_reward_logic/u_reward_display/VGA_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_information/VGA_data_reg[0]' (FDR) to 'u_reward_logic/u_reward_information/VGA_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_display/VGA_data_reg[1]' (FDR) to 'u_reward_logic/u_reward_display/VGA_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_information/VGA_data_reg[1]' (FDR) to 'u_reward_logic/u_reward_information/VGA_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_display/VGA_data_reg[2]' (FDR) to 'u_reward_logic/u_reward_display/VGA_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_information/VGA_data_reg[2]' (FDR) to 'u_reward_logic/u_reward_information/VGA_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_display/VGA_data_reg[3]' (FDR) to 'u_reward_logic/u_reward_display/VGA_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_display/VGA_data_reg[4]' (FDR) to 'u_reward_logic/u_reward_display/VGA_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_information/VGA_data_reg[4]' (FDS) to 'u_reward_logic/u_reward_information/VGA_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_display/VGA_data_reg[5]' (FDR) to 'u_reward_logic/u_reward_display/VGA_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_information/VGA_data_reg[5]' (FDS) to 'u_reward_logic/u_reward_information/VGA_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_display/VGA_data_reg[6]' (FDR) to 'u_reward_logic/u_reward_display/VGA_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_information/VGA_data_reg[6]' (FDS) to 'u_reward_logic/u_reward_information/VGA_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_information/VGA_data_reg[7]' (FDS) to 'u_reward_logic/u_reward_information/VGA_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_information/VGA_data_reg[8]' (FDS) to 'u_reward_logic/u_reward_information/VGA_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_information/VGA_data_reg[9]' (FDS) to 'u_reward_logic/u_reward_information/VGA_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'u_reward_logic/u_reward_information/VGA_data_reg[10]' (FDS) to 'u_reward_logic/u_reward_information/VGA_data_reg[11]'
+WARNING: [Synth 8-3332] Sequential element (clk_8Hz_reg) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (clk_2Hz_reg) is unused and will be removed from module clock.
+WARNING: [Synth 8-3332] Sequential element (restart_reg) is unused and will be removed from module game_status_control.
+WARNING: [Synth 8-3332] Sequential element (apple_x_reg[5]) is unused and will be removed from module apple_generator.
+WARNING: [Synth 8-3332] Sequential element (is_exist_reg[2]) is unused and will be removed from module snake_moving.
+WARNING: [Synth 8-3332] Sequential element (is_exist_reg[1]) is unused and will be removed from module snake_moving.
+WARNING: [Synth 8-3332] Sequential element (is_exist_reg[0]) is unused and will be removed from module snake_moving.
+WARNING: [Synth 8-3332] Sequential element (speedValue_reg[2]) is unused and will be removed from module snake_moving.
+WARNING: [Synth 8-3332] Sequential element (speedValue_reg[1]) is unused and will be removed from module snake_moving.
+WARNING: [Synth 8-3332] Sequential element (speedValue_reg[0]) is unused and will be removed from module snake_moving.
+WARNING: [Synth 8-3332] Sequential element (clk_cnt_reg[18]) is unused and will be removed from module seg_display.
+WARNING: [Synth 8-3332] Sequential element (u_reward_random_generator/random_ypos_reg[5]) is unused and will be removed from module reward_logic.
+WARNING: [Synth 8-3332] Sequential element (u_reward_random_generator/random_xpos_reg[5]) is unused and will be removed from module reward_logic.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:46 . Memory (MB): peak = 866.695 ; gain = 503.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping                       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|interface_display  | A*(B:0x140)                       | 17     | 9      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|interface_display  | PCIN+(A:0x0):B+(C:0xffffffffff60) | 30     | 10     | 9      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|reward_information | A*(B:0x18)                        | 10     | 5      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reward_information | PCIN+(A:0x0):B+(C:0xfffffffffe16) | 30     | 10     | 10     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
++-------------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:01:08 . Memory (MB): peak = 898.969 ; gain = 535.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:01:11 . Memory (MB): peak = 928.590 ; gain = 565.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:01:13 . Memory (MB): peak = 946.676 ; gain = 583.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_vga_control/VGA/u_interface_display/u_pic_snake  has unconnected pin wea[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_vga_control/VGA/u_interface_display/u_pic_snake  has unconnected pin dina[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_vga_control/VGA/u_interface_display/u_pic_snake  has unconnected pin dina[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_vga_control/VGA/u_interface_display/u_pic_snake  has unconnected pin dina[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_vga_control/VGA/u_interface_display/u_pic_snake  has unconnected pin dina[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_vga_control/VGA/u_interface_display/u_pic_snake  has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_vga_control/VGA/u_interface_display/u_pic_snake  has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_vga_control/VGA/u_interface_display/u_pic_snake  has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_vga_control/VGA/u_interface_display/u_pic_snake  has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_vga_control/VGA/u_interface_display/u_pic_snake  has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_vga_control/VGA/u_interface_display/u_pic_snake  has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_vga_control/VGA/u_interface_display/u_pic_snake  has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_vga_control/VGA/u_interface_display/u_pic_snake  has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_vga_control/VGA/u_interface_display/u_pic_snake  has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_vga_control/VGA/u_interface_display/u_pic_snake  has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_vga_control/VGA/u_interface_display/u_pic_snake  has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_vga_control/VGA/u_interface_display/u_pic_snake  has unconnected pin dina[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_reward_logic/u_reward_information/info_pic_protected  has unconnected pin wea[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_reward_logic/u_reward_information/info_pic_protected  has unconnected pin dina[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_reward_logic/u_reward_information/info_pic_slowly  has unconnected pin wea[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_reward_logic/u_reward_information/info_pic_slowly  has unconnected pin dina[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_reward_logic/u_reward_information/info_pic_grade  has unconnected pin wea[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \u_reward_logic/u_reward_information/info_pic_grade  has unconnected pin dina[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:01:15 . Memory (MB): peak = 946.676 ; gain = 583.355
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:01:15 . Memory (MB): peak = 946.676 ; gain = 583.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:01:15 . Memory (MB): peak = 946.676 ; gain = 583.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:01:15 . Memory (MB): peak = 946.676 ; gain = 583.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:01:15 . Memory (MB): peak = 946.676 ; gain = 583.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:01:15 . Memory (MB): peak = 946.676 ; gain = 583.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |pic_protected |         1|
+|2     |pic_slowly    |         1|
+|3     |pic_grade     |         1|
+|4     |pic_snake     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |pic_grade     |     1|
+|2     |pic_protected |     1|
+|3     |pic_slowly    |     1|
+|4     |pic_snake     |     1|
+|5     |BUFG          |     3|
+|6     |CARRY4        |    99|
+|7     |DSP48E1       |     2|
+|8     |DSP48E1_1     |     1|
+|9     |DSP48E1_2     |     1|
+|10    |LUT1          |    43|
+|11    |LUT2          |   396|
+|12    |LUT3          |   133|
+|13    |LUT4          |   136|
+|14    |LUT5          |   173|
+|15    |LUT6          |   363|
+|16    |MUXF7         |     1|
+|17    |FDCE          |   420|
+|18    |FDPE          |    23|
+|19    |FDRE          |   252|
+|20    |FDSE          |    20|
+|21    |LD            |     2|
+|22    |IBUF          |     9|
+|23    |OBUF          |    26|
+|24    |OBUFT         |    16|
++------+--------------+------+
+
+Report Instance Areas: 
++------+------------------------------+------------------------+------+
+|      |Instance                      |Module                  |Cells |
++------+------------------------------+------------------------+------+
+|1     |top                           |                        |  2138|
+|2     |  u_apple_generator           |apple_generator         |   129|
+|3     |  u_buttons                   |buttons                 |    98|
+|4     |  u_clock                     |clock                   |    44|
+|5     |  u_game_status_control       |game_status_control     |   163|
+|6     |  u_reward_logic              |reward_logic            |   436|
+|7     |    u_reward_display          |reward_display          |    46|
+|8     |    u_reward_information      |reward_information      |    92|
+|9     |    u_reward_random_generator |reward_random_generator |   205|
+|10    |  u_seg_display               |seg_display             |   175|
+|11    |  u_snake_moving              |snake_moving            |   809|
+|12    |  u_vga_control               |vga_control             |   230|
+|13    |    VGA                       |vga_display             |   226|
+|14    |      u_interface_display     |interface_display       |    74|
+|15    |    myclk                     |clk_unit                |     4|
++------+------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:01:15 . Memory (MB): peak = 946.676 ; gain = 583.355
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 23 critical warnings and 45 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:01:02 . Memory (MB): peak = 946.676 ; gain = 241.203
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:01:15 . Memory (MB): peak = 946.676 ; gain = 583.355
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 115 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LD => LDCE: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+140 Infos, 109 Warnings, 23 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:01:19 . Memory (MB): peak = 946.676 ; gain = 594.848
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/snake_basys3/snake_basys3.runs/synth_1/top_greedy_snake.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_greedy_snake_utilization_synth.rpt -pb top_greedy_snake_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 946.676 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 20 23:31:20 2024...

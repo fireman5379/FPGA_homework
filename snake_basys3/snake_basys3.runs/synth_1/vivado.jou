@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Feb 20 23:29:42 2024
+# Process ID: 16064
+# Current directory: D:/FPGA/snake_basys3/snake_basys3.runs/synth_1
+# Command line: vivado.exe -log top_greedy_snake.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_greedy_snake.tcl
+# Log file: D:/FPGA/snake_basys3/snake_basys3.runs/synth_1/top_greedy_snake.vds
+# Journal file: D:/FPGA/snake_basys3/snake_basys3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_greedy_snake.tcl -notrace

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="pic_snake_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1708438996">
+  <File Type="PA-TCL" Name="pic_snake.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="pic_snake_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="pic_snake_reports.tcl"/>
+  <File Type="RDS-RDS" Name="pic_snake.vds"/>
+  <File Type="RDS-UTIL" Name="pic_snake_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="pic_snake_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="pic_snake.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="pic_snake_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="pic_snake_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/pic_snake">
+    <File Path="$PSRCDIR/sources_1/ip/pic_snake/pic_snake.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="pic_snake"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/pic_snake">
+    <File Path="$PSRCDIR/sources_1/ip/pic_snake/pic_snake.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="pic_snake"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

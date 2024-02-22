@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1708442977">
+  <File Type="PA-TCL" Name="top_greedy_snake.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_greedy_snake_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="top_greedy_snake_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top_greedy_snake.vds"/>
+  <File Type="RDS-UTIL" Name="top_greedy_snake_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_greedy_snake_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top_greedy_snake.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_greedy_snake_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_greedy_snake_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/Seg_Display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Goggle download/FPGA-Games-master/SnakeGame/src/Seg_Display.v"/>
+        <Attr Name="ImportTime" Val="1561085620"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/VGA_Control.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Goggle download/FPGA-Games-master/SnakeGame/src/VGA_Control.v"/>
+        <Attr Name="ImportTime" Val="1561085620"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/apple_generator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Goggle download/FPGA-Games-master/SnakeGame/src/apple_generator.v"/>
+        <Attr Name="ImportTime" Val="1561085620"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/buttons.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Goggle download/FPGA-Games-master/SnakeGame/src/buttons.v"/>
+        <Attr Name="ImportTime" Val="1561085620"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/clk_unit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Goggle download/FPGA-Games-master/SnakeGame/src/clk_unit.v"/>
+        <Attr Name="ImportTime" Val="1561085620"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/clock.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Goggle download/FPGA-Games-master/SnakeGame/src/clock.v"/>
+        <Attr Name="ImportTime" Val="1561085620"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/game_status_control.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Goggle download/FPGA-Games-master/SnakeGame/src/game_status_control.v"/>
+        <Attr Name="ImportTime" Val="1561085620"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/interface_display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Goggle download/FPGA-Games-master/SnakeGame/src/interface_display.v"/>
+        <Attr Name="ImportTime" Val="1706946512"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/reward_display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Goggle download/FPGA-Games-master/SnakeGame/src/reward_display.v"/>
+        <Attr Name="ImportTime" Val="1561085620"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/reward_information.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Goggle download/FPGA-Games-master/SnakeGame/src/reward_information.v"/>
+        <Attr Name="ImportTime" Val="1706946586"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/reward_logic.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Goggle download/FPGA-Games-master/SnakeGame/src/reward_logic.v"/>
+        <Attr Name="ImportTime" Val="1561085620"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/reward_random_generator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Goggle download/FPGA-Games-master/SnakeGame/src/reward_random_generator.v"/>
+        <Attr Name="ImportTime" Val="1561085620"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/snake_moving.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Goggle download/FPGA-Games-master/SnakeGame/src/snake_moving.v"/>
+        <Attr Name="ImportTime" Val="1561085620"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/vga_display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Goggle download/FPGA-Games-master/SnakeGame/src/vga_display.v"/>
+        <Attr Name="ImportTime" Val="1561085620"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/top_greedy_snake.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Goggle download/FPGA-Games-master/SnakeGame/src/top_greedy_snake.v"/>
+        <Attr Name="ImportTime" Val="1561085620"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/coe/protected.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/coe/slowly.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/coe/grade.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/320.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top_greedy_snake"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/xdc/snake_basys3_xc.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Goggle download/FPGA-Games-master/SnakeGame/xdc/snake_basys3_xc.xdc"/>
+        <Attr Name="ImportTime" Val="1706945870"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="pic_protected"/>
+  <BlockFileSet Type="BlockSrcs" Name="pic_snake"/>
+  <BlockFileSet Type="BlockSrcs" Name="pic_slowly"/>
+  <BlockFileSet Type="BlockSrcs" Name="pic_grade"/>
+</GenRun>

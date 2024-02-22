@@ -1,0 +1,106 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Tue Feb 20 23:33:13 2024
+| Host         : LAPTOP-JUA6D9DK running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_greedy_snake_control_sets_placed.rpt
+| Design       : top_greedy_snake
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    37 |
+| Unused register locations in slices containing registers |    72 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            3 |
+|      4 |            2 |
+|      8 |            9 |
+|     12 |            2 |
+|     14 |            2 |
+|    16+ |           19 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             118 |           30 |
+| No           | No                    | Yes                    |             314 |           44 |
+| No           | Yes                   | No                     |             196 |           29 |
+| Yes          | No                    | No                     |              70 |           11 |
+| Yes          | No                    | Yes                    |             572 |           94 |
+| Yes          | Yes                   | No                     |             186 |           24 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+
+|         Clock Signal         |                        Enable Signal                       |                           Set/Reset Signal                           | Slice Load Count | Bel Load Count |
++------------------------------+------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+
+|  u_vga_control/myclk/clk_tmp |                                                            | rst_IBUF                                                             |                1 |              2 |
+|  clk_n                       | u_vga_control/VGA/hsync_i_1_n_0                            | rst_IBUF                                                             |                1 |              2 |
+|  clk_n                       | u_vga_control/VGA/vsync_i_1_n_0                            | rst_IBUF                                                             |                1 |              2 |
+|  u_vga_control/VGA/E[0]      |                                                            |                                                                      |                1 |              4 |
+|  clk_4Hz_BUFG                |                                                            |                                                                      |                2 |              4 |
+|  clk_IBUF_BUFG               | u_seg_display/point[3]_i_1_n_0                             | rst_IBUF                                                             |                2 |              8 |
+|  clk_n                       |                                                            | u_vga_control/VGA/u_interface_display/VGA_data_interface[11]_i_1_n_0 |                2 |              8 |
+|  clk_n                       |                                                            | u_vga_control/VGA/u_interface_display/VGA_data_interface[7]_i_1_n_0  |                3 |              8 |
+|  clk_n                       |                                                            | u_vga_control/VGA/u_interface_display/VGA_data_interface[3]_i_1_n_0  |                2 |              8 |
+|  clk_IBUF_BUFG               | u_seg_display/point[15]_i_1_n_0                            | rst_IBUF                                                             |                3 |              8 |
+|  clk_IBUF_BUFG               | u_seg_display/point[7]_i_1_n_0                             | rst_IBUF                                                             |                2 |              8 |
+|  clk_IBUF_BUFG               | u_seg_display/point[11]_i_1_n_0                            | rst_IBUF                                                             |                1 |              8 |
+|  clk_IBUF_BUFG               | u_seg_display/sel[3]_i_1_n_0                               | rst_IBUF                                                             |                3 |              8 |
+|  clk_IBUF_BUFG               | u_buttons/left_key_last                                    | rst_IBUF                                                             |                1 |              8 |
+|  clk_IBUF_BUFG               | u_snake_moving/cube_x[0][5]_i_1_n_0                        | rst_IBUF                                                             |                2 |             12 |
+|  clk_IBUF_BUFG               | u_snake_moving/cube_y[0][5]_i_1_n_0                        | rst_IBUF                                                             |                2 |             12 |
+|  clk_IBUF_BUFG               | u_snake_moving/cube_num[6]_i_1_n_0                         | rst_IBUF                                                             |                4 |             14 |
+|  clk_IBUF_BUFG               | u_reward_logic/u_reward_random_generator/random_key_xpos_0 |                                                                      |                1 |             14 |
+|  clk_4Hz_BUFG                | u_reward_logic/u_reward_random_generator/rand_num          |                                                                      |                3 |             16 |
+|  clk_IBUF_BUFG               | u_seg_display/seg_out[7]_i_1_n_0                           | rst_IBUF                                                             |                5 |             16 |
+|  clk_IBUF_BUFG               | u_reward_logic/cnt                                         | u_reward_logic/cnt[9]_i_1_n_0                                        |                4 |             20 |
+|  clk_IBUF_BUFG               | u_reward_logic/u_reward_random_generator/lock_i_2_n_0      | u_reward_logic/u_reward_random_generator/lock_i_1_n_0                |                2 |             20 |
+|  clk_IBUF_BUFG               | u_apple_generator/apple_y[4]_i_1_n_0                       | rst_IBUF                                                             |                3 |             20 |
+|  clk_n                       |                                                            |                                                                      |                6 |             22 |
+|  clk_n                       |                                                            | rst_IBUF                                                             |                3 |             22 |
+|  clk_n                       | u_vga_control/VGA/line_cnt[10]_i_1_n_0                     | rst_IBUF                                                             |                5 |             22 |
+|  clk_n                       | u_vga_control/VGA/u_interface_display/E[0]                 | u_vga_control/VGA/color_out[11]_i_1_n_0                              |                2 |             24 |
+|  clk_n                       | u_vga_control/VGA/u_interface_display/E[0]                 |                                                                      |                7 |             40 |
+|  clk_IBUF_BUFG               |                                                            | u_clock/clear                                                        |                7 |             52 |
+|  clk_IBUF_BUFG               |                                                            | u_reward_logic/u_reward_display/clear                                |                7 |             56 |
+|  clk_IBUF_BUFG               | u_game_status_control/E[0]                                 | u_game_status_control/SS[0]                                          |                8 |             58 |
+|  clk_4Hz_BUFG                | u_reward_logic/u_reward_random_generator/dout1_out         | u_reward_logic/u_reward_random_generator/cnt[0]_i_1__1_n_0           |                8 |             64 |
+|  clk_IBUF_BUFG               |                                                            | u_game_status_control/clk_cnt_reg[31]_0                              |                8 |             64 |
+|  clk_IBUF_BUFG               | u_game_status_control/out[1]                               | rst_IBUF                                                             |                8 |             64 |
+|  clk_IBUF_BUFG               |                                                            |                                                                      |               21 |             88 |
+|  clk_IBUF_BUFG               |                                                            | rst_IBUF                                                             |               40 |            290 |
+|  clk_IBUF_BUFG               | u_snake_moving/cube_y[1][5]_i_1_n_0                        | rst_IBUF                                                             |               51 |            360 |
++------------------------------+------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+
+
+

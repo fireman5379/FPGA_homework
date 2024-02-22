@@ -1,0 +1,2 @@
+pic_protected.v,verilog,xil_defaultlib,../../../../snake_basys3.srcs/sources_1/ip/pic_protected/sim/pic_protected.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

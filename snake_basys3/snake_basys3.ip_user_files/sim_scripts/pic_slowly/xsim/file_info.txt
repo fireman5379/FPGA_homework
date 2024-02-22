@@ -1,0 +1,2 @@
+pic_slowly.v,verilog,xil_defaultlib,../../../../snake_basys3.srcs/sources_1/ip/pic_slowly/sim/pic_slowly.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
